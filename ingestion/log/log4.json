@@ -1,0 +1,9 @@
+{
+    "timestamp":"2026-01-14T11:00:00.000Z",
+    "level":"ERROR",
+    "messege":"Failed calling external API: https://httpbin.org/status/401",
+    "index":"splunk-index",
+    "class":"ExternalCaller",
+    "service":"external-caller",
+    "stacktrace":"java.lang.RuntimeException: HTTP 401: <empty response>\n\tat com.example.processor.ExternalCaller.callApi(ExternalCaller.groovy:23)\n\tat com.example.Application.run(Application.groovy:23)"
+}

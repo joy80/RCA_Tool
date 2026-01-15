@@ -1,0 +1,9 @@
+{
+    "timestamp":"2026-01-14T10:00:00.000Z",
+    "level":"ERROR",
+    "messege":"Unhandled exception: groovy.lang.GroovyRuntimeException: Cannot get property 'name' on null object",
+    "index":"splunk-index",
+    "class":"BadProperty",
+    "service":"data-processor",
+    "stacktrace":"groovy.lang.GroovyRuntimeException: Cannot get property 'name' on null object\n\tat com.example.processor.BadProperty.doSomething(BadProperty.groovy:8)\n\tat com.example.Application.run(Application.groovy:12)"
+}

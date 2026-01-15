@@ -1,0 +1,9 @@
+{
+    "timestamp":"2026-01-14T10:05:00.000Z",
+    "level":"ERROR",
+    "messege":"Unhandled exception: java.lang.NumberFormatException: For input string: \"abc\"",
+    "index":"splunk-index",
+    "class":"TypeCast",
+    "service":"data-processor",
+    "stacktrace":"java.lang.NumberFormatException: For input string: \"abc\"\n\tat java.lang.Integer.parseInt(Integer.java:xxx)\n\tat com.example.processor.TypeCast.parse(TypeCast.groovy:8)\n\tat com.example.Application.run(Application.groovy:12)"
+}

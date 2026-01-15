@@ -1,0 +1,9 @@
+{
+    "timestamp":"2026-01-14T09:15:22.128Z",
+    "level":"ERROR",
+    "messege":"Unhandled exception: java.lang.IndexOutOfBoundsException: Index: 10, Size: 5",
+    "index":"splunk-index",
+    "class":"GetUserInfo",
+    "service":"data-processor",
+    "stacktrace":"java.lang.IndexOutOfBoundsException: Index: 10, Size: 5\\n\tat java.util.ArrayList.get(ArrayList.java:437)\\n\tat com.example.processor.GetUserInfo.process(GetUserInfo.groovy:42)\\n\tat com.example.Application.run(Application.groovy:23)\\nCaused by: groovy.lang.GroovyRuntimeException: Cannot get property 'size' on null object\\n\tat com.example.processor.GetUserInfo.getSize(GetUserInfo.groovy:36)"
+}
