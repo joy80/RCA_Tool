@@ -6,7 +6,7 @@ from langgraph.graph import StateGraph, START, END
 from StateSchema import RCAState
 from ExtractLog import extractlog
 from ExtractSourceCode import extractsourcecode
-from generaterca import generate_rca
+from GenerateRca import generate_rca
 
 import logging
 
@@ -31,7 +31,7 @@ workflow = graph.compile()
 
 if __name__ == "__main__":
     # specify the log name to start the workflow
-    logname = "log4.json"
+    logname = "log3.json"
     initial_state = RCAState(logfile=logname)
     state = workflow.invoke(initial_state)
 
