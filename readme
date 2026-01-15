@@ -1,4 +1,4 @@
 ## install requirements.txt
 
 ## run the project: 
-python RCA.py
+python WorkflowRCA.py
