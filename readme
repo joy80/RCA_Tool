@@ -1,5 +1,5 @@
 ## install requirements.txt
-
+## give log file to parse from ingestion/log folder in WorkflowRCA.py in line 34 ( eg: logname = "log2.json")
 ## run the project: 
 python WorkflowRCA.py
 
