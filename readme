@@ -2,3 +2,36 @@
 
 ## run the project: 
 python WorkflowRCA.py
+
+Workflow Overview
+The project automates root cause analysis for application errors by combining log analysis with source code examination and AI-powered insights.
+
+Step-by-Step Process:
+Extract Log Data (ExtractLog.py)
+
+Reads error logs from log folder (JSON format)
+Extracts key information:
+Timestamp, severity level, error message
+Stack trace details
+Source class that caused the error
+Service and index information
+Extract Source Code (ExtractSourceCode.py)
+
+Takes the source class name from the log
+Matches it to a corresponding Groovy file in src
+Loads the actual source code that generated the error
+Generate RCA via LLM (CallLLM.py)
+
+Sends three pieces of context to Google's Gemini AI:
+The error message
+Stack trace analysis
+Relevant source code
+The AI generates:
+Root Cause Analysis: Detailed explanation of what went wrong
+Recommended Code Fix: Suggested code changes to prevent the issue
+Save Results (WorkflowRCA.py)
+
+Orchestrates the entire workflow using LangGraph
+Saves two output files in RCAoutput folder:
+.txt file with the AI-generated RCA and fix recommendations
+_state.json file with complete debugging information (all intermediate data)
